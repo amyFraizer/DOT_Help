@@ -1,0 +1,456 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.2  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Ross Lepiane">
+	<META NAME="CREATED" CONTENT="20131231;16243193">
+	<META NAME="CHANGEDBY" CONTENT="Ross ">
+	<META NAME="CHANGED" CONTENT="20161118;9063244">
+	<META NAME="CHANGEDBY" CONTENT="Ross ">
+	<META NAME="CHANGEDBY" CONTENT="Ross ">
+	<META NAME="CHANGEDBY" CONTENT="Ross ">
+	<META NAME="CHANGEDBY" CONTENT="Ross ">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 0.79in }
+		P { margin-bottom: 0.08in }
+		H3 { margin-bottom: 0.08in }
+		H3.western { font-family: "Arial", sans-serif }
+		H3.cjk { font-family: "Microsoft YaHei" }
+		H3.ctl { font-family: "Mangal" }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+	<link rel = "stylesheet" href = "DotCSS.css">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+	<A NAME="top"></A>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=5><B>Lite-Check
+DOT</B></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; page-break-before: always">
+<BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<div class = "toc">
+<P>Jump to:</P>
+<P><A HREF="#top">Top</A></P>
+<P><A HREF="#using">Using the Application</A></P>
+<P><A HREF="#dot">DOT Mode</A></P>
+<P><A HREF="#tiretool">Bluetooth Tire Tool</A></P>
+<P><A HREF="#diag">Diagnostic Mode</A></P>
+<P><A HREF="#errors">Unexpected Errors</A></P>
+<P><A HREF="#appa">Appendix A: Troubleshooting Bluetooth</A></P>
+</div>
+<P>	
+</P>
+<div class = "mainContent">
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3>The purpose of
+this application is to assist with trailer inspections required for
+DOT compliance or preventative maintenance. It initiates automatic
+tests and retrieves the results via the Trailer Interface and sends
+them, along with user-entered information, to the Lite-Check Cloud
+for storage and report generation.</FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3>The philosophy
+of the Lite-Check DOT inspection app is to collect all data during a
+single pass around the trailer with a minimum of wasted movement, and
+the inspection process is ordered with that in mind. While it is
+possible to move back and forth between screens, we strongly
+recommend that you follow the order in which they appear.</FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<H3 CLASS="western"><A NAME="using"></A>Using The Application</H3>
+<P>Upon starting the application you'll be presented with a login
+dialog.  You must enter valid credentials for an active Lite-Check
+Cloud account.  Note that the password is case-sensitive.  The first
+time you execute the application on a device you will need to type
+in the username, but on subsequent executions a drop-down list will
+be available with the names of all valid users and you only need enter
+the password.  If the tablet does not currently have wi-fi you will be
+allowed to proceed with inspections using cached data and the reports
+will be saved until they can be successfully uploaded to the cloud.</P>
+<P>At any time you can switch between DOT (inspection) mode and diagnostic mode.
+The former is used for DOT and preventative maintenance inspections,
+the latter is used for troubleshooting known problems with the ABS
+system, the air system, or specific electrical circuits.  Toggle modes by
+selecting the icon in the toolbar. <B>Please
+note</B> <SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">that
+if you plan to generate a report while in diagnostic mode and wish to
+include information about the inspector, company, and/or trailer, you
+should select DOT mode and enter all necessary data on the first
+screen and then switch to diagnostic mode.</SPAN></SPAN></P>
+<P><BR><BR>
+</P>
+<H3 CLASS="western" STYLE="font-style: normal"><A NAME="dot"></A><B>DOT
+Mode</B></H3>
+<P STYLE="font-weight: normal"><SPAN STYLE="font-style: normal"><B>Note:</B></SPAN>
+<SPAN STYLE="font-style: normal">please do not connect the Trailer
+Interface to the trailer at this point! </SPAN>
+</P>
+<P STYLE="font-style: normal; font-weight: normal">After entering your user credentials
+you're presented with the selection screen.  Select your shop location from
+the drop-down list (it will default to your home location) and enter a work
+order number (if applicable).  Select a tractor or trailer by either scanning the barcode to read the ID or selecting
+it from the drop-down list.  If you have a large number of trailers
+start typing the first few characters and the result list will be filtered to
+IDs that match.  If you're inspecting a new trailer for the first time and
+it has not yet been added to the cloud, press the "New" button and carefully
+enter all the details (if no New button is shown, you do not have access to
+add new entries from the tablet; have your supervisor or manager add the trailer
+via the cloud website).  Be sure the configuration
+information is correct: number of axles, ABS, disc or drum brakes and
+the tire type.</P>
+<P STYLE="font-style: normal; font-weight: normal">If the trailer ID
+is encoded in a barcode, press the &ldquo;Scan&rdquo; button and use
+the tablet's camera to read the encoded value. Please note:</P>
+<UL>
+	<LI><P STYLE="font-style: normal; font-weight: normal">Supported
+	barcode types are Code 39, Code 128, UPC A, and UPC E</P>
+	<LI><P STYLE="font-style: normal; font-weight: normal">Ensure
+	adequate lighting when scanning</P>
+	<LI><P STYLE="font-style: normal; font-weight: normal">The barcode
+	should be roughly centered and fill at least half of the narrowest
+	dimension of the screen</P>
+	<LI><P STYLE="font-style: normal; font-weight: normal">Orientation
+	does not matter (horizontal, vertical, or in between)</P>
+	<LI><P STYLE="font-style: normal; font-weight: normal">If the image
+	is not crisp and clear, retake the picture</P>
+	<LI><P STYLE="font-style: normal; font-weight: normal">Ensure the
+	barcode label is clean and legible</P>
+	<LI><P STYLE="font-style: normal; font-weight: normal">Ensure the
+	camera focuses on the label if there are nearer or farther items in
+	the frame</P>
+</UL>
+<P><BR><BR>
+</P>
+<P STYLE="font-style: normal; font-weight: normal">If the trailer is
+not equipped with ABS, has an older unit that does not use PLC, or is
+not supported, please uncheck the &ldquo;ABS equipped&rdquo; box at
+the bottom of the Trailer screen. Failure to do so will result in an
+out-of-service inspection status due to inability to communicate with
+the ABS ECU. Please use alternate means to verify the ABS (if any) is
+functioning properly.   Similarly, if drum brakes are specified on a
+trailer with disc brakes, the inspector will be prompted for applied
+brake stroke measurements which are not applicable.</P>
+<P STYLE="font-style: normal; font-weight: normal">Before hitting "Save" make sure the appropriate inspection
+type is selected.  The drop-down list will always default to DOT, but the
+inspector may select a preventative maintenance inspection or a custom inspection
+based on the unit type of the specified trailer.</P>
+<P STYLE="font-weight: normal"><SPAN STYLE="font-style: normal"><BR></SPAN><SPAN STYLE="font-style: normal"><B>Loading a Previous Inspection</B></SPAN></P>
+<P STYLE="font-style: normal; font-weight: normal">If you wish to resume an unfinished inspection or make changes once repairs are complete,
+select "Open" from the menu in the upper right-hand corner. Note, however, that you should never load a previous inspection
+to perform a subsequent PM or DOT inspection on the same trailer at a later date.</P>
+<P STYLE="font-style: normal; font-weight: normal">If you elect to
+load a previous inspection, a dialog will appear listing
+all available files. If there are many, you can more easily find
+what you're looking for by typing the first
+digit or two of the trailer ID. The results will be filtered to show only
+those starting with what you've typed. You can also sort by ID
+or date. Clicking on the respective label will
+toggle between no sorting (the initial default), ascending order, or
+descending order. If you sort by both ID and date, the files will be
+sorted first by ID, and then within files of the same name,
+by date. Inspections can be deleted from within this
+dialog by holding your finger on the selected entry until a
+confirmation dialog appears.</P>
+<P STYLE="font-weight: normal"><SPAN STYLE="font-style: normal"><BR></SPAN><SPAN STYLE="font-style: normal"><B>Beginning
+the Inspection</B></SPAN></P>
+<P STYLE="font-weight: normal"><SPAN STYLE="font-style: normal">This walk-through assumes that the
+standard Lite-Check DOT inspection has been selected.  Custom inspections
+will vary, of course.</P>
+<P STYLE="font-style: normal; font-weight: normal">The inspection begins at the front of the trailer since that is where the
+Trailer Interface is connected. Start with a visual inspection of the
+gladhands and 7-way connector, then power on the Trailer Interface
+unit </SPAN><I>before connecting the air lines to the trailer</I><SPAN STYLE="font-style: normal">.
+The pressure sensors are calibrated on start-up and must be at
+atmospheric pressure. Once the calibration message disappears from
+the LCD screen you may connect the air lines and 7-way connector to
+the trailer.</SPAN></P>
+<P STYLE="font-style: normal; font-weight: normal">Continue with your
+visual inspection of the items listed on the &ldquo;Front Damage&rdquo;
+screen, marking each as &ldquo;Good,&rdquo; &ldquo;OOS&rdquo;
+(out-of-service), or NA (not applicable). Once all inspection items
+on this screen have been completed, press &ldquo;Save&rdquo; at the
+bottom to proceed.</P>
+<P><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">The
+next step is the automated circuit, ABS, and air leak tests. The
+tablet should have already connected via Bluetooth to the Trailer
+Interface. If the Bluetooth icon doesn't have &ldquo;waves&rdquo;
+emanating from it, tap it and select your tester from the list.
+If your Verifier doesn't appear in the list, go to <A HREF="#appa">Appendix A</A> for
+troubleshooting tips.</SPAN></SPAN></P>
+<P STYLE="font-style: normal; font-weight: normal">By default, the
+emergency air system will be charged at the completion of the ABS
+test in preparation for the automated background air leak test. If
+you do not wish for that to occur, uncheck the &ldquo;Run Air Leak
+Test&rdquo; box. Hit &ldquo;Run Tests&rdquo; to start the circuit and
+ABS tests. You may hit the info (&ldquo;i&rdquo;) button under either
+progress bar while the tests are running to get real-time details as
+they are retrieved from the Trailer Interface, or you may hit Save to
+continue with the visual inspection while the tests finish in the
+background. These tests may not be skipped, so the &ldquo;Save&rdquo;
+button will be disabled until the tests are started.</P>
+<P STYLE="font-style: normal; font-weight: normal">The air leak test
+(if selected) runs automatically in the background while you continue
+the inspection.  At the completion of the ABS test it will begin
+charging the emergency air system.  When the pressure exceeds 100
+PSI, it will open the service valve to charge those lines as well. 
+When pressure peaks and stabilizes, the air leak test will begin
+automatically and run for 60 seconds, monitoring any air lost in
+either system.  A brief status message at the bottom of the screen
+keeps the user informed of the test's progress.</P>
+<P STYLE="font-style: normal; font-weight: normal">Continue
+performing the indicated visual inspections on each page, selecting
+&ldquo;Good,&rdquo; &ldquo;OOS,&rdquo; or &ldquo;NA&rdquo; (not
+applicable) for each item. The heading for each screen will indicate
+the current inspection point, with an icon in the upper right to
+visually indicate front, left, rear, right, top, or undercarriage.</P>
+<P STYLE="font-style: normal; font-weight: normal">Whenever the note
+icon is visible at the bottom of the screen (to the left of the
+&ldquo;Save&rdquo; button) you may add a note and/or picture for an
+inspection item. If you see an item of concern that is not
+specifically listed, select &ldquo;General&rdquo; from the list,
+enter a note, take a picture of the item, and optionally select the
+&ldquo;out of service&rdquo; checkbox to have the item flagged on the
+report.</P>
+<P STYLE="font-style: normal; font-weight: normal">At any point after
+the automated tests are completed you may select &ldquo;Return to
+overhead view&rdquo; to select a previous inspection point. This is
+especially useful if you have loaded a previous inspection and you
+want to review a specific area.  If for some reason you wish to
+discontinue an inspection in progress, select "Cancel Inspection"
+from the menu.</P>
+<P STYLE="font-style: normal; font-weight: normal">There are visual
+inspection screens for the lights on the left, rear, and right sides
+of the trailer. For each of these screens, press the appropriate
+light button and visually confirm that the lights illuminate. The
+automated electrical test has already measured voltage and current
+for each circuit and detected shorts or opens, but if a single bulb
+in a multi-light circuit is out it can only be detected visually.</P>
+<P>For the left and right tire screens, the currently selected tire
+is highlighted in red. Any notes and/or pictures will apply to that
+tire. To enter the tire pressure and tread depth in their respective
+fields, tap on a tire and a dialog will appear. Indicate the
+condition with the buttons (good, bulge, cut, nail, separation or
+flat spot).</P>
+<P>If you have the optional Bluetooth tire pressure and tread depth
+gauge the values will automatically be applied to each tire in
+sequence. Start by taking one or more tread depth measurements at
+various points along the surface of the outer tire on the first axle.
+You may take as many measurements as you wish and the shallowest
+point will be recorded. The tablet will emit an audible tone each
+time a measurement is taken as a confirmation, but if the reading is
+greater than or equal to the currently displayed value it will not
+change. When you are done taking tread depth measurements, read the
+tire pressure and the next tire will automatically be selected. The
+order is outer tire then inner tire, repeating for each axle in
+sequence. Tire conditions, if any, must still be entered manually via the
+dialog as above. You can also take measurements with the dialog open.
+In this mode, the tire does not automatically advance after each
+pressure reading, and when you first open the dialog you may override
+an earlier tread depth measurement (i.e., the minimum is reset for
+that tire).</P>
+<P>On the Air Brakes screen, select each position in turn and enter
+the values for the applied brake stroke (for drum brakes) and pad
+thickness. Brake stroke is measured by pressing the &ldquo;Service&rdquo;
+button to apply and release the brakes.  The brake stroke field and
+service air buttons will not be displayed if disc brakes were
+selected on the Trailer screen.</P>
+<P>After completion of all inspection screens, a summary dialog will
+appear listing all items that were found to be OOS. If notes or
+pictures were added for those items, those will be displayed as well.
+If everything appears to be correct, press &ldquo;Submit&rdquo; to
+send the inspection report to the Lite-Check Cloud for storage and
+printing. If one or more items are incorrect, press &ldquo;Modify&rdquo;
+to go back and re-run tests, enter skipped values, or change items
+that were inadvertently marked OOS.</P>
+<P>Upon submission, an electronic signature will be required for all
+DOT inspections.  Sign your name and press &ldquo;Submit&rdquo;.
+Custom inspections can specify whether or not a
+signature is required.  The signature will appear on the inspection
+report.</P>
+<P>After the report is submitted you may hit the &ldquo;New
+Inspection&rdquo; button to begin the process again for another
+trailer, or simply hit the Home button or select another application.
+Do not use the Android task manager to close the app since report
+submission may not be complete. It runs in the background, and may
+take several seconds for reports with multiple pictures or if several
+inspections were performed while not connected to wi-fi.</P>
+<P><BR><BR>
+</P>
+<H3 CLASS="western"><A NAME="tiretool"></A>Notes on the Bluetooth tire pressure and tread
+depth gauge</H3>
+<P>If you purchased a tire tool with a tablet or full Verifier system
+the tablet and tool should already be paired with each other.  Power on
+the tool and launch the DOT app on the tablet, then press the Bluetooth
+icon in the upper left-hand corner.  You should see "Trans-Logik" in the
+list with a serial number matching that on the tool's label.  Tap that
+item, and within a few seconds the tool should be connected as indicated
+by an icon in the upper right.  You should only need to do this the first
+time.  For each subsequent use, if the tool is on when the tablet app
+is launched it will automatically reconnect.</P>
+<P>If you purchased a tire tool later as an add-on it must be paired with 
+the tablet.  Please refer to <A href="#appa">Appendix A</A>
+</P>
+<P>On all screens except the very first app screen and the diagnostic
+screen you should see an icon in the toolbar depicting the tool. 
+This icon serves as an indicator that the tool is connected via
+Bluetooth, an indicator of the approximate battery charge level,
+and a means for opening the calibration dialog.  The icon background
+will be green if the battery has a full or nearly full charge.  If it
+turns yellow the battery should be sufficient for several more inspections
+but should be charged soon.  If it turns red the tool should be charged
+as soon as possible.  Note that as with any battery, the state of charge
+can be affected dramatically by temperature:  battery life at 40 degrees
+will be very noticeably shorter than battery life at 70 degrees.</P>
+<P>The tool should be calibrated at intervals recommended by the manufacturer, or
+if readings are not accurate.  Calibration requires the metal
+cylinder that came with your Trans-Logik tool, and a known 100 PSI
+air source with a Schrader valve.  Follow the instructions in the
+calibration dialog for each of the four steps.</P>
+<P><BR><BR>
+</P>
+<H3 CLASS="western"><A NAME="diag"></A>Diagnostic Mode</H3>
+<P>Diagnostic mode is intended for troubleshooting problems with ABS,
+air leaks, or light circuits. As noted above, if you wish to submit a
+diagnostic report that contains information about the inspector,
+company, and trailer, please start in DOT mode and enter the
+necessary information in the first three screens, then switch to
+diagnostic mode. If no information is entered and you submit a
+diagnostic report you will be redirected back to these initial screens
+to gather the necessary data for the report.</P>
+<P><BR><BR>
+</P>
+<P><B>ABS</B></P>
+<P STYLE="font-weight: normal">The ABS test in diagnostic mode is
+interactive. Press the &ldquo;ABS&rdquo; button to begin. It will
+take a few moments for the system to check the brake and auxiliary
+light and read information from the ECU. Once that is complete it
+will display the manufacturer and other summary information. Use the
+up and down arrows on the screen to scroll through available pages of
+information and select the hyperlinks of interest to you. You may
+view active and stored faults, including help information about
+addressing these issues. It is also possible to reset codes if
+supported by the ECU, and view wheel speed information.</P>
+<P><BR><BR>
+</P>
+<P><B>Air</B></P>
+<P STYLE="font-weight: normal">The air leak test in diagnostic mode
+will remain active until you shut it off so you can continue to
+monitor both starting pressures and current pressures. You may select
+Emergency only or both Emergency and Service for the air leak test.</P>
+<P><BR><BR>
+</P>
+<P><B>Lights</B></P>
+<P STYLE="font-weight: normal">Press any light button to get
+real-time information on the voltage, current, and condition of the
+selected circuit. If a short or open is detected, the alarm will
+sound. Note that since most lights are wired in parallel, a bulb that
+is not illuminating will most likely not cause an open circuit.</P>
+<P><BR><BR>
+</P>
+<H3 CLASS="western"><A NAME="errors"></A><B>Unexpected Errors</B></H3>
+<P STYLE="font-weight: normal"><FONT FACE="Times New Roman, sans-serif">Every
+effort has been made to test the application thoroughly and find bugs
+prior to release. However, bugs can still occur, including unforeseen
+interactions with new versions of the Android OS or differences in
+hardware between various manufacturers' devices. If you encounter a
+crash or bug, we want to know! The Android system will automatically
+close the app in most cases. Restart the Lite-Check DOT app and
+select &quot;View Log&quot; from the menu. A dialog will appear with
+diagnostic information about the most recent problem the app
+encountered. Please hit the &quot;Send Error Report&quot; button and
+select an e-mail application. Please enter as much information as
+possible about what you were doing prior to the crash and any other
+details that may help us find the problem and then send the e-mail
+(the Lite-Check Verifier tech-support e-mail address is automatically
+set as the destination). If wi-fi with internet access is not
+available in your shop, please call Lite-Check tech support.<BR></FONT><BR><BR>
+</P>
+<H3 CLASS="western"><A NAME="appa"></A>Appendix A</H3>
+<P>Bluetooth pairing is required for the Verifier 1010, but not the 1020.
+Please ignore this appendix if you're using the 1020.</P>
+<P>Your tablet was paired with the Trailer Interface prior to being
+shipped to you and should connect automatically a few moments after
+starting the application. If that does not occur, press the Bluetooth
+icon at the top of the screen and select your Trailer Interface from
+the list. If it still fails to connect, try these steps:</P>
+<P><BR><BR>
+</P>
+<P>Bluetooth pairing procedure (tablet to TI):</P>
+<UL>
+	<LI><P>On the Trailer Interface, press the &quot;Select&quot; button
+	and then select &quot;BT_Pair&quot; via the arrow buttons and press
+	&quot;Select&quot; again</P>
+	<LI><P>Select &quot;Pair to tablet&quot; and press &quot;Select&quot;</P>
+	<LI><P>On the tablet, press the Bluetooth icon in the upper left of
+	the Lite-Check DOT app</P>
+	<LI><P>Press &quot;Scan for devices&quot; on the pop-up dialog</P>
+	<LI><P>When &quot;Verifier-&lt;sn&gt;&quot; appears (where &lt;sn&gt;
+	is the serial number of the TI), select it</P>
+	<LI><P>When the pairing dialog appears, select &quot;OK&quot;</P>
+	<LI><P>After a brief moment, &quot;Connected to Verifier&quot;
+	should appear on the tablet, and the LCD screen on the Verifier
+	should show &quot;Connected to tablet&quot;</P>
+</UL>
+<P><BR><BR>If the pairing process fails:</P>
+<UL>
+	<LI><P>On the tablet, &quot;swipe&quot; down from the top of the
+	screen and select the &quot;gear&quot; icon (Settings)</P>
+	<LI><P>Select Bluetooth</P>
+	<LI><P>If your Verifier appears in the list of paired devices, press
+	the gear icon beside it</P>
+	<LI><P>Select &quot;Unpair&quot;</P>
+	<LI><P>Repeat the procedure above</P>
+</UL>
+<P><BR><BR>
+</P>
+<P>Bluetooth pairing procedure (tire tool to tablet):</P>
+<BR>
+<P>With the tire tool powered on (and initialization complete, as indicated
+by the LED changing from red to green), go to the Bluetooth menu on
+the tablet and look for &ldquo;Trans-Logik&rdquo; in the list of
+available devices.  If none are found, press the Scan button and wait
+a few seconds.  Make sure the serial number matches that on the
+tool's label.  Select the device and hit 'OK' on the tablet when the
+pairing authorization dialog appears.  Then launch the Lite-Check DOT
+app and press the Bluetooth icon in the upper left corner.  Select
+the Trans-Logik tool from the list of paired devices, and after a few
+moments you should see a message indicating a successful connection. 
+Note that subsequently the tablet will attempt to automatically
+reconnect to this tool each time the app is started.</P>
+<P><BR><BR>
+</P>
+<P>Check for an internal air leak on the Trailer Interface:</P>
+<UL>
+	<LI><P>Make sure the air system is properly calibrated. (See Air Calibration)</P>
+	<LI><P>Make sure the unit is properly powered, and supplied with air.</P>
+	<LI><P>Press �Power� to turn on the tester.</P>
+	<LI><P>Make sure no air hoses are connected to the front of the tester.</P>
+	<LI><P>Make sure the supply air is still connected, and unit is still powered on.</P>
+	<LI><P>Log in and go to diagnostic mode on the tablet.</P>
+	<LI><P>Press EMER, wait a few seconds, then SERVICE, then allow the pressures to settle for a moment.</P>
+	<LI><P>Press LEAK and wait for 60 seconds.</P>
+	<LI><P>The system should not leak more than 1 PSI during the elapsed minute. The internal air leak test is complete!</P>
+</UL>
+<P><BR><BR>
+</P>
+<P>Air Calibration:<BR>(Due to temperature or altitude differences the air system should be calibrated periodically)</P>
+<UL>
+	<LI><P>Connect the unit to a Power supply or battery with the proper voltage.</P>
+	<LI><P>Connect the unit to supply air with proper pressure. (120 psi is standard)</P>
+	<LI><P>Plug air hoses that are open (to atmosphere) into the EMER and SERV quick disconnects. (Glad-hands that are not plugged or connected to a trailer should work)</P>
+	<LI><P>Make sure air supply is still connected, and Power on the unit.</P>
+	<LI><P>Log in and go to diagnostic mode on the Tablet.</P>
+	<LI><P>Actuate EMER and SERVICE a few times to make sure the auto calibration worked.</P>
+	<LI><P>Remember that the calibration only happens when the unit is turned on. Press Reset to try again.</P>
+</UL>
+</div>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>
